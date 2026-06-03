@@ -106,10 +106,11 @@ const Footer = () => {
 
 
     return (
-        <div className="grid grid-cols-[3fr_1fr_1fr_1fr] bg-gray-800 text-white font-[cursive,san-serif] mt-6 leading-loose p-6">
+        <div className="lg:grid lg:grid-cols-[3fr_1fr_1fr_1fr] bg-gray-800 text-white font-[cursive,san-serif] mt-6 leading-loose p-6 flex justify-start items-start
+           flex-col gap-12">
             <div>
                 <h1 className="text-2xl">Footer Logo</h1>
-                <p className="text-[17px] mt-2 mb-5">
+                <p className="lg:text-[17px] mt-2 mb-5">
                     Ready to explore the possibilities? Dive deeper into our products, learn about our visionary team, or check out our latest blogs for insights into the world of AI and mobile technology. We invite you to be part of the future - explore, innovate, and transform with EAIsoft.
                 </p>
                 <a href="https://technetcloud.co">EAIsoft Ltd, 7 Bell Yard, London, WC2A 2JR</a>
@@ -129,7 +130,7 @@ const Footer = () => {
 
             {footerdetail.map((first) => {
                 return (
-                    <div className="ml-20">
+                    <div className="lg:ml-20">
                         <h1>
                             {first.title}
                         </h1>
